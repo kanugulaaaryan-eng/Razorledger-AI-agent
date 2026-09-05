@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="RazorLedger AI">
+  <defs>
+    <linearGradient id="rlBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FF8A00"/>
+      <stop offset="0.55" stop-color="#FB6B10"/>
+      <stop offset="1" stop-color="#F2490B"/>
+    </linearGradient>
+    <linearGradient id="rlSheen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- rounded-square badge -->
+  <rect x="26" y="26" width="460" height="460" rx="118" fill="url(#rlBg)"/>
+  <!-- top sheen for depth -->
+  <path d="M26 120 C100 40 240 26 330 40 L486 130 L486 470 A118 118 0 0 1 368 486 L26 486 Z" fill="url(#rlSheen)"/>
+  <!-- soft inner border -->
+  <rect x="30" y="30" width="452" height="452" rx="114" fill="none" stroke="#ffffff" stroke-opacity="0.28" stroke-width="6"/>
+
+  <!-- "R" mark -->
+  <g fill="#ffffff">
+    <!-- vertical stem -->
+    <rect x="132" y="146" width="50" height="220" rx="25"/>
+    <!-- bowl (rounded top-right) -->
+    <path d="M182 146 h58 a62 62 0 0 1 0 124 h-58 z"/>
+    <!-- diagonal leg -->
+    <rect x="224" y="262" width="50" height="120" rx="25" transform="rotate(38 249 322)"/>
+  </g>
+
+  <!-- ledger / trend line -->
+  <g stroke="#ffffff" stroke-linecap="round" fill="none" stroke-opacity="0.9">
+    <path d="M136 392 h76" stroke-width="16"/>
+    <path d="M230 392 h60 l26 -26" stroke-width="16"/>
+  </g>
+  <circle cx="336" cy="354" r="12" fill="#ffffff"/>
+</svg>

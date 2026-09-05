@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --canvas: #edeef1;
+  --frame: #ffffff;
+  --card-border: #eef0f4;
+  --ink: #0f172a;
+  --ink-2: #6b7280;
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --green: #10b981;
+  --pink: #ec4899;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--canvas);
+  color: var(--ink);
+}
+
+/* Headings use the geometric Jakarta face, like the reference design. */
+h1, h2, h3, .font-jakarta {
+  font-family: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+}
+
+/* Premium app frame: a rounded white sheet floating on the light canvas. */
+.app-frame {
+  background: var(--frame);
+  border-radius: 28px;
+  box-shadow: 0 12px 40px -18px rgba(15, 23, 42, 0.18), 0 2px 8px -4px rgba(15, 23, 42, 0.08);
+}
+
+/* Reusable card look. */
+.rl-card {
+  background: #ffffff;
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05), 0 8px 24px -20px rgba(15, 23, 42, 0.12);
+}
+
+.rl-card-hover {
+  transition: box-shadow 0.18s ease, transform 0.18s ease;
+}
+.rl-card-hover:hover {
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.06), 0 18px 40px -24px rgba(37, 99, 235, 0.35);
+}
+
+/* Kebab / icon chip like the reference (faint circle hover). */
+.chip-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #9aa3af;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.chip-btn:hover {
+  background: #f1f3f7;
+  color: #334155;
+}
+
+/* Diagonally-striped progress / funnel bars seen in the reference. */
+.stripes-blue {
+  background-image: repeating-linear-gradient(
+    -45deg, #bfdbfe 0 6px, #dbeafe 6px 12px
+  );
+}
+.stripes-green {
+  background-image: repeating-linear-gradient(
+    -45deg, #a7f3d0 0 6px, #d1fae5 6px 12px
+  );
+}
+.stripes-pink {
+  background-image: repeating-linear-gradient(
+    -45deg, #fbcfe8 0 6px, #fce7f3 6px 12px
+  );
+}
+.stripes-teal {
+  background-image: repeating-linear-gradient(
+    -45deg, #99f6e4 0 6px, #ccfbf1 6px 12px
+  );
+}
+
+/* Hide scrollbars on horizontal nav pill runs. */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #d3d9e0;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b6bec8;
+}

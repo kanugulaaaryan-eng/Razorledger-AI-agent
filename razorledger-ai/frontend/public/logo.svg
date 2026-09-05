@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="160" viewBox="0 0 600 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="RazorLedger AI">
+  <defs>
+    <linearGradient id="wmBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FF8A00"/>
+      <stop offset="0.55" stop-color="#FB6B10"/>
+      <stop offset="1" stop-color="#F2490B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- mark -->
+  <g>
+    <rect x="16" y="16" width="128" height="128" rx="32" fill="url(#wmBg)"/>
+    <g fill="#ffffff">
+      <rect x="42" y="46" width="16" height="72" rx="8"/>
+      <path d="M58 46 h20 a21 21 0 0 1 0 42 h-20 z"/>
+      <rect x="76" y="84" width="16" height="40" rx="8" transform="rotate(38 84 104)"/>
+    </g>
+    <g stroke="#ffffff" stroke-linecap="round" fill="none" stroke-opacity="0.9">
+      <path d="M44 108 h26" stroke-width="5"/>
+      <path d="M78 108 h20 l9 -9" stroke-width="5"/>
+    </g>
+  </g>
+
+  <!-- wordmark -->
+  <text x="164" y="86" font-family="'Plus Jakarta Sans','Inter',system-ui,sans-serif" font-size="56" font-weight="800" fill="#0F172A" letter-spacing="-1">RazorLedger</text>
+  <text x="164" y="130" font-family="'Plus Jakarta Sans','Inter',system-ui,sans-serif" font-size="26" font-weight="600" fill="#6B7280" letter-spacing="2">AI · FINANCE CONTROLLER</text>
+</svg>
